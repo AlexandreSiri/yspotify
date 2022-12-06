@@ -5,13 +5,14 @@
     "title": "REST API",
     "description": ""
   },
-  "host": "localhost:3000",
+
+  "host": "localhost:3013",
   "basePath": "/",
   "schemes": [
     "http"
   ],
   "paths": {
-    "/create-account": {
+    "/users/create-account": {
       "post": {
         "description": "",
         "parameters": [
@@ -41,7 +42,7 @@
         }
       }
     },
-    "/login": {
+    "/users/login": {
       "post": {
         "description": "",
         "parameters": [
@@ -74,7 +75,7 @@
         }
       }
     },
-    "/sync": {
+    "/users/sync": {
       "post": {
         "description": "",
         "parameters": [
@@ -107,7 +108,7 @@
         }
       }
     },
-    "/logged": {
+    "/users/logged": {
       "get": {
         "description": "",
         "parameters": [
@@ -129,7 +130,7 @@
         }
       }
     },
-    "/getUser": {
+    "/users/getUser": {
       "get": {
         "description": "",
         "parameters": [],
@@ -140,7 +141,7 @@
         }
       }
     },
-    "/spotifyToken": {
+    "/users/spotifyToken": {
       "get": {
         "description": "",
         "parameters": [],
@@ -151,7 +152,7 @@
         }
       }
     },
-    "/personality": {
+    "/users/personality": {
       "get": {
         "description": "",
         "parameters": [],
@@ -168,7 +169,7 @@
         }
       }
     },
-    "/callback": {
+    "/users/callback": {
       "get": {
         "description": "",
         "parameters": [],
@@ -179,7 +180,7 @@
         }
       }
     },
-    "/getGroups": {
+    "/groups/getGroups": {
       "get": {
         "description": "",
         "parameters": [],
@@ -190,7 +191,7 @@
         }
       }
     },
-    "/{group}": {
+    "/groups/{group}": {
       "get": {
         "description": "",
         "parameters": [
@@ -214,7 +215,7 @@
         }
       }
     },
-    "/getGroup/{group}": {
+    "/groups/getGroup/{group}": {
       "get": {
         "description": "",
         "parameters": [
@@ -235,7 +236,7 @@
         }
       }
     },
-    "/getGroups/users/{params}": {
+    "/groups/getGroups/users/{params}": {
       "get": {
         "description": "",
         "parameters": [
